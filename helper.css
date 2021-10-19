@@ -1,0 +1,23 @@
+.u-margin-bottom-md {
+  margin-bottom: 2rem !important;
+}
+
+.u-border-bottom::after {
+  content: "";
+  display: block;
+  background-color: var(--main-color);
+  height: 5px;
+  border-radius: 2rem;
+  width: 120%;
+  margin-left: -10%;
+}
+
+.u-border-bottom--white::after {
+  content: "";
+  display: block;
+  background-color: white;
+  height: 5px;
+  border-radius: 2rem;
+  width: 120%;
+  margin-left: -10%;
+}

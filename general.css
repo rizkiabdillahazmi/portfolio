@@ -1,0 +1,12 @@
+/* typography */
+
+.heading-primary {
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+.heading-secondary {
+  font-size: 2.4rem;
+  font-weight: 500;
+  /* padding: 0 3rem; */
+}

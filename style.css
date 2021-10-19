@@ -434,11 +434,18 @@ body {
   font-size: 1rem;
   margin-bottom: 1.4rem;
 }
+
+.footer-text a:link,
+.footer-text a:visited{
+  color: inherit;
+  text-decoration: underline;
+}
 .footer-icons-box {
   display: flex;
   gap: 2rem;
 }
 .footer-logo-icon {
+  color: white;
   height: 2rem;
   width: 2rem;
 }

@@ -7,13 +7,12 @@
 }
 
 * {
-  margin: 0;
+  margin: auto;
   padding: 0;
   box-sizing: border-box;
 }
 
 body {
-  margin: auto;
   font-size: 62.5%;
   font-family: "Roboto", sans-serif;
   color: var(--text-color);

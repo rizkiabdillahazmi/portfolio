@@ -127,7 +127,7 @@
     pointer-events: auto;
     visibility: visible;
     transform: translateX(0%);
-
+    font-size: 3rem;
     display: flex;
     flex-direction: column;
   }

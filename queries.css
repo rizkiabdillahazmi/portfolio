@@ -51,7 +51,7 @@
     font-size: 2.4rem;
   }
   .section-interest {
-    padding: 3rem 7rem 3rem 7rem;
+    padding: 8rem 7rem 3rem 7rem;
   }
   .section-why {
     padding: 6rem 3rem 8rem 3rem;
@@ -94,6 +94,60 @@
   .lingkaran.lingkaran--interest {
     height: 14rem;
     width: 14rem;
+  }
+
+  .header {
+    position: relative;
+  }
+
+  .nav {
+    background-color: rgba(255, 255, 255, 0.904);
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+
+    transform: translateX(100%);
+
+    /* hidden */
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+  }
+
+  .nav-open .nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0%);
+
+    display: flex;
+    flex-direction: column;
+  }
+  .btn-mobile-nav {
+    display: block;
+    z-index: 2;
+  }
+
+  .nav-open .btn-mobile-nav {
+    position: relative;
+  }
+
+  .nav-open .icon-mobile-nav[name="close-outline"] {
+    display: block;
+    position: fixed;
+    top: 10px;
+    right: 40px;
+  }
+  .nav-open .icon-mobile-nav[name="menu-outline"] {
+    display: none;
   }
 }
 

@@ -29,34 +29,33 @@
   </head>
 
   <body>
+    <header class="header">
+      <div class="logo-box">
+        <img src="img/logo.png" alt="rizki abdillah azmi logo" class="logo" />
+        `
+      </div>
+      <nav>
+        <ul class="nav">
+          <li><a href="#interest" class="nav-item">Skills</a></li>
+          <li><a href="#qualification" class="nav-item">Qualification</a></li>
+          <li><a href="#tools" class="nav-item">Tools</a></li>
+          <li>
+            <button
+              class="btn btn--contact btn--animation"
+              onclick="window.open('mailto:rizkiabdillahazmi10@gmail.com','_blank','resizable=yes')"
+            >
+              Contact Me
+            </button>
+          </li>
+        </ul>
+      </nav>
+      <div class="btn-mobile-nav">
+        <ion-icon name="menu-outline" class="icon-mobile-nav"></ion-icon>
+        <ion-icon name="close-outline" class="icon-mobile-nav"></ion-icon>
+      </div>
+    </header>
     <section class="section-hero">
       <div class="container">
-        <header class="header">
-          <div class="logo-box">
-            <img
-              src="img/logo.png"
-              alt="rizki abdillah azmi logo"
-              class="logo"
-            />
-            `
-          </div>
-          <nav>
-            <ul class="nav">
-              <li><a href="#" class="nav-item">About</a></li>
-              <li><a href="#" class="nav-item">Project</a></li>
-              <li><a href="#" class="nav-item">Qualification</a></li>
-              <li>
-                <button
-                  class="btn btn--contact btn--animation"
-                  onclick="window.open('mailto:rizkiabdillahazmi10@gmail.com','_blank','resizable=yes')"
-                >
-                  Contact Me
-                </button>
-              </li>
-            </ul>
-          </nav>
-        </header>
-
         <div class="hero">
           <div class="hero-text-box">
             <p class="hero-tittle">&#8212; Hi, I'm Rizki Abdillah Azmi</p>
@@ -83,7 +82,7 @@
                 <ion-icon class="logo-icon" name="logo-instagram"></ion-icon>
               </a>
               <a
-                href="https://api.WhatsApp.com/send?phone=+6282370797457"
+                href="https://api.WhatsApp.com/send?phone=082370797457"
                 target="_blank"
               >
                 <ion-icon class="logo-icon" name="logo-whatsapp"></ion-icon>
@@ -110,7 +109,7 @@
       </div>
     </section>
 
-    <section class="section-interest">
+    <section class="section-interest" id="interest">
       <div class="container container--flex-column">
         <div class="lingkaran lingkaran--full lingkaran--interest"></div>
         <div class="interest-tittle">
@@ -160,7 +159,7 @@
       </div>
     </section>
 
-    <section class="section-why">
+    <section class="section-why" id="qualification">
       <div class="container container--flex-column">
         <div class="why-tittle">
           <h2 class="heading-secondary">Why Hire Me ?</h2>
@@ -317,7 +316,7 @@
       </div>
     </section>
 
-    <section class="section-skill">
+    <section class="section-skill" id="tools">
       <div class="container container--flex-column">
         <div class="skill-tittle">
           <h2 class="heading-secondary u-border-bottom">Most Used Equipment</h2>
@@ -357,7 +356,7 @@
                 ></ion-icon>
               </a>
               <a
-                href="https://api.WhatsApp.com/send?phone=+6282370797457"
+                href="https://api.WhatsApp.com/send?phone=082370797457"
                 target="_blank"
               >
                 <ion-icon
@@ -388,5 +387,7 @@
         </div>
       </section>
     </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>

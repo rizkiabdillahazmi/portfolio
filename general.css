@@ -1,12 +1,28 @@
 /* typography */
 
 .heading-primary {
-  font-size: 3rem;
+  font-size: 5rem;
   font-weight: 500;
 }
 
 .heading-secondary {
-  font-size: 2.4rem;
+  font-size: 3.6rem;
   font-weight: 500;
   /* padding: 0 3rem; */
+}
+
+.flex {
+  display: flex;
+}
+
+.flex--column {
+  flex-direction: column;
+  column-gap: 4rem;
+}
+
+.container--flex-column {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  align-items: center;
 }

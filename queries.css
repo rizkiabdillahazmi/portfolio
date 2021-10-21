@@ -1,0 +1,127 @@
+@media (max-width: 66em) {
+  html {
+    font-size: 50%;
+  }
+}
+
+/* width 950 px */
+@media (max-width: 60em) {
+  html {
+    font-size: 43.75%;
+  }
+  .btn-box {
+    justify-content: space-between;
+    gap: 1.5rem;
+  }
+}
+
+/* width 800px */
+@media (max-width: 50em) {
+  .heading-primary {
+    font-size: 4rem;
+  }
+  .card {
+    padding: 1.5rem 2rem;
+  }
+  .card__tittle {
+    font-size: 2rem;
+  }
+
+  .card__text {
+    font-size: 1.2rem;
+  }
+}
+
+/* width 650 */
+@media (max-width: 40.7em) {
+  .u-margin-bottom-md {
+    margin-bottom: 1rem !important;
+  }
+  .hero-tittle {
+    font-size: 1.3rem;
+  }
+  .hero-text {
+    font-size: 1rem;
+  }
+  .heading-primary {
+    font-size: 3rem;
+  }
+
+  .heading-secondary {
+    font-size: 2.4rem;
+  }
+  .section-interest {
+    padding: 3rem 7rem 3rem 7rem;
+  }
+  .section-why {
+    padding: 6rem 3rem 8rem 3rem;
+  }
+  .card {
+    padding: 1.3rem 1.8rem;
+  }
+  .card__tittle {
+    font-size: 1.8rem;
+  }
+
+  .card__text {
+    font-size: 1rem;
+  }
+
+  .why-content {
+    column-gap: 2rem;
+  }
+  .card-why {
+    padding: 1rem;
+  }
+}
+
+/* 520px */
+@media (max-width: 32.5em) {
+  .competence-certificate-box {
+    gap: 2rem;
+  }
+  .competence-card {
+    padding: 1.3rem;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+
+    justify-items: center;
+    text-align: center;
+  }
+  .competence-card-tittle {
+    font-size: 1.5rem;
+  }
+  .lingkaran.lingkaran--interest {
+    height: 14rem;
+    width: 14rem;
+  }
+}
+
+/* Smartphone - 450px*/
+@media (max-width: 28.125em) {
+  .hero {
+    grid-template-columns: 1fr;
+  }
+  .hero-img-box {
+    grid-row: 1;
+  }
+  .hero-img {
+    width: 50%;
+  }
+  .interest-box {
+    grid-template-columns: 1fr;
+  }
+
+  .why-content {
+    grid-template-columns: 1fr;
+    gap: 4rem;
+  }
+  .lingkaran.lingkaran--interest {
+    height: 10rem;
+    width: 10rem;
+  }
+
+  .lingkaran:not(.lingkaran--interest) {
+    display: none;
+  }
+}

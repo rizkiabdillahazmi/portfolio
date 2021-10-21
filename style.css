@@ -6,6 +6,10 @@
   --text-color: rgb(14, 2, 50);
 }
 
+html {
+  font-size: 62.5%;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -13,9 +17,13 @@
 }
 
 body {
-  font-size: 62.5%;
   font-family: "Roboto", sans-serif;
   color: var(--text-color);
+}
+
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
 }
 
 /* ******************/
@@ -24,8 +32,6 @@ body {
 
 .section-hero {
   padding: 0rem 6rem 2rem 6rem;
-  display: flex;
-  flex-direction: column;
 }
 
 .header {
@@ -74,8 +80,11 @@ body {
 }
 
 .hero {
-  display: flex;
+  /* display: flex;
   justify-content: space-between;
+  gap: 3rem; */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   gap: 3rem;
 }
 
@@ -86,12 +95,13 @@ body {
 }
 
 .hero-img-box {
+  flex: 1;
   position: relative;
   text-align: center;
   overflow-y: hidden;
 }
 
-.hero-img-box::after {
+/* .hero-img-box::after {
   content: "";
   display: block;
   position: absolute;
@@ -108,7 +118,7 @@ body {
   clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 60%);
 
   box-shadow: 0 0 0 0.5rem var(--main-color-trans);
-}
+} */
 
 .hero-text-box {
   display: flex;
@@ -159,6 +169,7 @@ body {
 }
 
 .btn--contact {
+  font-size: 1.2rem;
   background-color: transparent;
   border-radius: 2rem;
   border: 2px solid var(--main-color);
@@ -167,10 +178,16 @@ body {
   transition: all 0.4s;
 }
 
-.btn--contact:hover {
+/* .btn--contact:hover {
   background-color: var(--main-color);
   color: white;
-  /* font-weight: 700; */
+} */
+
+.btn--animation:hover,
+.btn--animation:link:hover,
+.btn--animation:visited:hover {
+  background-color: var(--main-color);
+  color: white;
 }
 
 .btn--primary,
@@ -182,6 +199,7 @@ body {
   font-weight: 700;
   border-radius: 0.4rem;
   font-size: 1.2rem;
+  padding: 1rem 2rem;
 }
 
 .btn-icon-text {
@@ -202,10 +220,6 @@ body {
 
 .section-interest {
   padding: 6rem 14rem 3rem 14rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 4rem;
   position: relative;
   /* overflow: hidden; */
 }
@@ -218,14 +232,11 @@ body {
   border: 0px solid var(--main-color);
   transform: translate(-30%, -30%);
   box-shadow: 0 0 0 0.8rem var(--main-color-trans);
+  z-index: -1;
 }
-/* .lingkaran.lingkaran--interest::after {
-  content: "";
-  display: block;
-  height: 100%;
-} */
 
 .interest-box {
+  flex: 1;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
@@ -234,7 +245,7 @@ body {
 .card {
   /* border: 1px solid var(--main-color); */
   box-shadow: 0 0 0.2rem rgba(0, 0, 0, 0.2);
-  padding: 2rem;
+  padding: 3rem 4rem;
   border-radius: 1rem;
   text-align: center;
   display: flex;
@@ -244,19 +255,20 @@ body {
 
 .card__tittle {
   font-weight: 500;
-  font-size: 1.7rem;
+  font-size: 2.4rem;
   color: var(--text-color);
+  margin-bottom: 0.8rem;
 }
 
 .card__text {
-  font-size: 0.8rem;
+  font-size: 1.4rem;
   color: #a7a7a7;
 }
 
 .card__logo {
-  height: 3.3rem;
-  width: 3.3rem;
-  padding: 1rem;
+  height: 4.4rem;
+  width: 4.4rem;
+  padding: 2rem;
   border-radius: 50%;
   background-color: var(--main-color);
   color: white;
@@ -272,15 +284,8 @@ body {
 /* ******************/
 .section-why {
   padding: 6rem 6rem 8rem 6rem;
-  display: flex;
-  flex-direction: column;
-  gap: 4rem;
-  align-items: center;
   background-color: var(--main-color);
   color: white;
-
-  border-bottom-right-radius: 20rem;
-  border-top-left-radius: 20rem;
 }
 
 .why-content {
@@ -294,7 +299,7 @@ body {
   font-size: 2rem;
   font-weight: 700;
   margin-bottom: 1rem;
-  text-align: start;
+  text-align: center;
 }
 .why-personal-box-logo {
   display: grid;
@@ -303,8 +308,11 @@ body {
   border-radius: 0.8rem;
 }
 
+.why-personal,
 .why-competence {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
 }
 
 .competence-certificate-box {
@@ -325,9 +333,12 @@ body {
   gap: 2rem;
 }
 
+.certificate-box {
+  height: 100%;
+}
 .competence-card-icon {
-  height: 3rem;
-  width: 3rem;
+  height: 4rem;
+  width: 4rem;
   color: var(--main-color);
   border-radius: 50%;
   border: 2px solid var(--main-color);
@@ -367,11 +378,11 @@ body {
 .card-why__tittle {
   color: var(--main-color);
   font-weight: 500;
-  font-size: 1.7rem;
+  font-size: 2.2rem;
 }
 
 .card-why__text {
-  font-size: 0.8rem;
+  font-size: 1.2rem;
   color: #a7a7a7;
 }
 .card-why__text a {
@@ -379,8 +390,8 @@ body {
   text-decoration: underline;
 }
 .card-why__logo {
-  height: 3rem;
-  width: 3rem;
+  height: 4rem;
+  width: 4rem;
   color: var(--main-color);
 }
 
@@ -389,10 +400,6 @@ body {
 /* ******************/
 .section-skill {
   padding: 6rem 6rem 8rem 6rem;
-  display: flex;
-  flex-direction: column;
-  gap: 4rem;
-  align-items: center;
 }
 
 .skill-img-box {
@@ -414,10 +421,7 @@ body {
   background: var(--main-color);
   padding: 2rem 6rem 4rem 6rem;
   color: white;
-
   overflow: hidden;
-
-  border-top-left-radius: 10rem;
 }
 
 .footer-box {
@@ -436,7 +440,7 @@ body {
 }
 
 .footer-text a:link,
-.footer-text a:visited{
+.footer-text a:visited {
   color: inherit;
   text-decoration: underline;
 }

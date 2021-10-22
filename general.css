@@ -23,6 +23,6 @@
 .container--flex-column {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 4rem;
   align-items: center;
 }

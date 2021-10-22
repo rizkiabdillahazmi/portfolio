@@ -170,6 +170,11 @@
     grid-template-columns: 1fr;
     gap: 4rem;
   }
+
+  .skill-img {
+    width: 4rem;
+  }
+
   .lingkaran.lingkaran--interest {
     height: 10rem;
     width: 10rem;

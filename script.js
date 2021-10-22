@@ -6,7 +6,7 @@ btnNav.addEventListener("click", function () {
 });
 
 // only select all anchor with href property
-const allLinks = document.querySelectorAll("a:link");
+const allLinks = document.querySelectorAll("a[href^='#']");
 allLinks.forEach((link) => {
   link.addEventListener("click", function (event) {
     event.preventDefault();
